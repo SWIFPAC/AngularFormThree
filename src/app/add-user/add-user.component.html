@@ -1,0 +1,14 @@
+<h2>Add User</h2>
+<form (ngSubmit)="addUser()">
+  <div>
+    <label for="firstName">First Name</label>
+    <input id="firstName" name="firstName" [(ngModel)]="user.firstName" required />
+  </div>
+  <div>
+    <label for="lastName">Last Name</label>
+    <input id="lastName" name="lastName" [(ngModel)]="user.lastName" required />
+  </div>
+  <button type="submit">Add User</button>
+</form>
+
+
